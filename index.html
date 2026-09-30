@@ -13,9 +13,9 @@
 <body>
 <canvas id="c"></canvas>
 <script>
-const MESSAGE = "i \u2665 u meryoumti";   // <- change this text
+const MESSAGE = "for you \u2665";   // <- change this text
 const SPEED = 0.45, TILT = 0.45;
-const RAMP = ".:-=+oe*vl#%@";
+const RAMP = ".:-~+=ilI!1tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$";
 const cv = document.getElementById('c'), ctx = cv.getContext('2d');
 
 // ---------- 3D rose ----------
@@ -67,7 +67,7 @@ function resize() {
   dpr = window.devicePixelRatio || 1;
   W = cv.clientWidth; H = cv.clientHeight;
   cv.width = W * dpr; cv.height = H * dpr;
-  ch = Math.max(9, Math.min(15, Math.floor(H / 62)));
+  ch = Math.max(7, Math.min(13, Math.floor(H / 90)));
   ctx.font = `bold ${ch}px "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace`;
   cw = ctx.measureText('M').width;
   cols = Math.ceil(W / cw); rows = Math.ceil(H / ch);
